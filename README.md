@@ -30,9 +30,10 @@ Functionality
 - Search: search through the catalog of movies by title
 
 Libraries
-Note: as a personal view, I go against using 3rd party libraries for sensitive sections of application example network requests, though libraries like alamofire are very useful as they hold various features and are well maintained, but still with the rapid change in swift , one maybe be left with waiting on changes from provider before bugs are fixed within application.
+Note: as a personal view, I go against using 3rd party libraries for sensitive sections of application example network requests, though libraries like alamofire are very useful as they hold various features (including request chainning which would have been a helpful hand with this task) and are well maintained, but still with the rapid change in swift , one maybe be left with waiting on changes from provider before bugs are fixed within application.
 Futhermore, network security features by SSL pinning am less comfortable trusting third party libraries 
 Saying  these, third party libraries that are restricted to UI/UX are a feature in my application, as they improve the general application
+
 
 A great UI/UX but bugged fixed application can get the patience of users
 A poor UI/UX but perfect application is that mercy of competitors 
