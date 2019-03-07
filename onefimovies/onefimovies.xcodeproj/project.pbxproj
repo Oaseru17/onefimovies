@@ -1,0 +1,1086 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		25FEC9EE6F4DA17FB2FFBEFA /* libPods-onefimoviesTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CFC8107975504098F1B7BE1 /* libPods-onefimoviesTests.a */; };
+		5873DE3DC339C7044622E81E /* libPods-onefimoviesUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 328F644547FAD1F4E464F343 /* libPods-onefimoviesUITests.a */; };
+		C41D4DBBDC43CD4B0ED5430A /* Pods_onefimovies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5C284531B313B3F61D00150 /* Pods_onefimovies.framework */; };
+		E6647A6A222F408000F8C52A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6647A69222F408000F8C52A /* AppDelegate.swift */; };
+		E6647A6F222F408000F8C52A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6647A6D222F408000F8C52A /* Main.storyboard */; };
+		E6647A71222F408200F8C52A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6647A70222F408200F8C52A /* Assets.xcassets */; };
+		E6647A74222F408200F8C52A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6647A72222F408200F8C52A /* LaunchScreen.storyboard */; };
+		E6647A7F222F408300F8C52A /* onefimoviesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6647A7E222F408300F8C52A /* onefimoviesTests.swift */; };
+		E6647A8A222F408300F8C52A /* onefimoviesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6647A89222F408300F8C52A /* onefimoviesUITests.swift */; };
+		E6EE69B2222F4E04003B56F3 /* ColourSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EE69B1222F4E04003B56F3 /* ColourSetting.swift */; };
+		E6EE69B8222F512F003B56F3 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = E6EE69B7222F512F003B56F3 /* logo.png */; };
+		E6EE69BA222F5566003B56F3 /* IntroController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EE69B9222F5566003B56F3 /* IntroController.swift */; };
+		E6EE69BC222F5710003B56F3 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EE69BB222F5710003B56F3 /* Extension.swift */; };
+		E6EE69C0222F5D99003B56F3 /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E6EE69BF222F5D99003B56F3 /* background.jpg */; };
+		E6EE69D0222F71E0003B56F3 /* databasehelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EE69CF222F71E0003B56F3 /* databasehelper.swift */; };
+		E6EE69D3222F75EC003B56F3 /* CentralController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EE69D2222F75EC003B56F3 /* CentralController.swift */; };
+		E6EE69D8222F76EF003B56F3 /* ListingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EE69D7222F76EF003B56F3 /* ListingController.swift */; };
+		E6EE69DC222F789E003B56F3 /* MovieTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EE69DA222F789E003B56F3 /* MovieTableCell.swift */; };
+		E6EE69DD222F789E003B56F3 /* MovieTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6EE69DB222F789E003B56F3 /* MovieTableCell.xib */; };
+		E6EE6A1D222F9591003B56F3 /* DetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EE6A1C222F9591003B56F3 /* DetailsController.swift */; };
+		E6EE6A4F222F9B99003B56F3 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E6EE6A3E222F9B95003B56F3 /* OpenSans-Regular.ttf */; };
+		E6EE6A50222F9B99003B56F3 /* OpenSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E6EE6A3F222F9B95003B56F3 /* OpenSans-Italic.ttf */; };
+		E6EE6A51222F9B99003B56F3 /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E6EE6A40222F9B95003B56F3 /* OpenSans-Light.ttf */; };
+		E6EE6A52222F9B99003B56F3 /* OpenSans-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E6EE6A41222F9B95003B56F3 /* OpenSans-Semibold.ttf */; };
+		E6EE6A53222F9B99003B56F3 /* TitilliumWeb-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E6EE6A42222F9B95003B56F3 /* TitilliumWeb-Italic.ttf */; };
+		E6EE6A54222F9B99003B56F3 /* TitilliumWeb-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E6EE6A43222F9B96003B56F3 /* TitilliumWeb-Light.ttf */; };
+		E6EE6A55222F9B99003B56F3 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E6EE6A44222F9B96003B56F3 /* OpenSans-Bold.ttf */; };
+		E6EE6A56222F9B99003B56F3 /* TitilliumWeb-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E6EE6A45222F9B96003B56F3 /* TitilliumWeb-LightItalic.ttf */; };
+		E6EE6A57222F9B99003B56F3 /* TitilliumWeb-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E6EE6A46222F9B96003B56F3 /* TitilliumWeb-ExtraLight.ttf */; };
+		E6EE6A58222F9B99003B56F3 /* TitilliumWeb-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E6EE6A47222F9B96003B56F3 /* TitilliumWeb-SemiBold.ttf */; };
+		E6EE6A59222F9B99003B56F3 /* TitilliumWeb-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E6EE6A48222F9B97003B56F3 /* TitilliumWeb-Regular.ttf */; };
+		E6EE6A5A222F9B99003B56F3 /* TitilliumWeb-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E6EE6A49222F9B97003B56F3 /* TitilliumWeb-ExtraLightItalic.ttf */; };
+		E6EE6A5B222F9B99003B56F3 /* TitilliumWeb-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E6EE6A4A222F9B97003B56F3 /* TitilliumWeb-BoldItalic.ttf */; };
+		E6EE6A5C222F9B99003B56F3 /* OpenSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E6EE6A4B222F9B97003B56F3 /* OpenSans-BoldItalic.ttf */; };
+		E6EE6A5D222F9B99003B56F3 /* TitilliumWeb-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E6EE6A4C222F9B98003B56F3 /* TitilliumWeb-Bold.ttf */; };
+		E6EE6A5E222F9B99003B56F3 /* TitilliumWeb-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E6EE6A4D222F9B98003B56F3 /* TitilliumWeb-Black.ttf */; };
+		E6EE6A5F222F9B99003B56F3 /* TitilliumWeb-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E6EE6A4E222F9B98003B56F3 /* TitilliumWeb-SemiBoldItalic.ttf */; };
+		E6EE6A62222FF52E003B56F3 /* filled_star.png in Resources */ = {isa = PBXBuildFile; fileRef = E6EE6A60222FF52D003B56F3 /* filled_star.png */; };
+		E6EE6A63222FF52E003B56F3 /* empty_star.png in Resources */ = {isa = PBXBuildFile; fileRef = E6EE6A61222FF52D003B56F3 /* empty_star.png */; };
+		E6EE6A692230006F003B56F3 /* RatingTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EE6A672230006F003B56F3 /* RatingTableCell.swift */; };
+		E6EE6A6A2230006F003B56F3 /* RatingTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6EE6A682230006F003B56F3 /* RatingTableCell.xib */; };
+		E6EE6A6D22300149003B56F3 /* RatingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EE6A6C22300149003B56F3 /* RatingController.swift */; };
+		E6EE6A7222304C60003B56F3 /* movieseeddata.txt in Resources */ = {isa = PBXBuildFile; fileRef = E6EE6A7122304C5F003B56F3 /* movieseeddata.txt */; };
+		E6EE6A7422304C98003B56F3 /* SeedHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EE6A7322304C98003B56F3 /* SeedHelper.swift */; };
+		E6EE6A7622304D16003B56F3 /* ListingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EE6A7522304D16003B56F3 /* ListingModel.swift */; };
+		E6EE6A792230546A003B56F3 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EE6A782230546A003B56F3 /* Queue.swift */; };
+		E6EE6A7B22305B18003B56F3 /* ListingWebController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EE6A7A22305B18003B56F3 /* ListingWebController.swift */; };
+		E6EE6A7D22305B83003B56F3 /* WebApiConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EE6A7C22305B83003B56F3 /* WebApiConstant.swift */; };
+		E6EE6A8122307934003B56F3 /* ListingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EE6A8022307934003B56F3 /* ListingViewModel.swift */; };
+		E6EE6A8322307E04003B56F3 /* errorposter.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E6EE6A8222307E03003B56F3 /* errorposter.jpg */; };
+		E6EE6A8722309797003B56F3 /* RatingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EE6A8622309797003B56F3 /* RatingViewModel.swift */; };
+		E6EE6A8A22309C14003B56F3 /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EE6A8922309C14003B56F3 /* SearchController.swift */; };
+		E6EE6A8F2230AE6F003B56F3 /* SearchTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EE6A8D2230AE6F003B56F3 /* SearchTableCell.swift */; };
+		E6EE6A902230AE6F003B56F3 /* SearchTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6EE6A8E2230AE6F003B56F3 /* SearchTableCell.xib */; };
+		E6EE6A922230AF6D003B56F3 /* search.png in Resources */ = {isa = PBXBuildFile; fileRef = E6EE6A912230AF6C003B56F3 /* search.png */; };
+		E6EE6A942230B146003B56F3 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EE6A932230B146003B56F3 /* DataManager.swift */; };
+		E6EE6A972230B4A8003B56F3 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EE6A962230B4A8003B56F3 /* SearchViewModel.swift */; };
+		E6EE6A982230C648003B56F3 /* SeedHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EE6A7322304C98003B56F3 /* SeedHelper.swift */; };
+		E6EE6A9A2230CA64003B56F3 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EE6A782230546A003B56F3 /* Queue.swift */; };
+		E6EE6A9B2230CAAD003B56F3 /* ListingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EE6A7522304D16003B56F3 /* ListingModel.swift */; };
+		E6EE6A9C2230CB31003B56F3 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EE69BB222F5710003B56F3 /* Extension.swift */; };
+		E6EE6A9D2230D562003B56F3 /* databasehelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EE69CF222F71E0003B56F3 /* databasehelper.swift */; };
+		E6EE6A9E2230D565003B56F3 /* databasehelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EE69CF222F71E0003B56F3 /* databasehelper.swift */; };
+		E6FE5D012230DF9500CAF350 /* sampleresponse.json in Resources */ = {isa = PBXBuildFile; fileRef = E6FE5D002230DF9500CAF350 /* sampleresponse.json */; };
+		E6FE5D022230DF9500CAF350 /* sampleresponse.json in Resources */ = {isa = PBXBuildFile; fileRef = E6FE5D002230DF9500CAF350 /* sampleresponse.json */; };
+		E6FE5D032230DF9500CAF350 /* sampleresponse.json in Resources */ = {isa = PBXBuildFile; fileRef = E6FE5D002230DF9500CAF350 /* sampleresponse.json */; };
+		E6FE5D042230E0A600CAF350 /* ListingWebController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EE6A7A22305B18003B56F3 /* ListingWebController.swift */; };
+		E6FE5D052230E26E00CAF350 /* WebApiConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EE6A7C22305B83003B56F3 /* WebApiConstant.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E6647A7B222F408300F8C52A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E6647A5E222F408000F8C52A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E6647A65222F408000F8C52A;
+			remoteInfo = onefimovies;
+		};
+		E6647A86222F408300F8C52A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E6647A5E222F408000F8C52A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E6647A65222F408000F8C52A;
+			remoteInfo = onefimovies;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		328F644547FAD1F4E464F343 /* libPods-onefimoviesUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-onefimoviesUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		56687004980E2A8797C34CC4 /* Pods-onefimoviesUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-onefimoviesUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-onefimoviesUITests/Pods-onefimoviesUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5AD48863871E57EAFE050B1E /* Pods-onefimoviesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-onefimoviesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-onefimoviesTests/Pods-onefimoviesTests.release.xcconfig"; sourceTree = "<group>"; };
+		6CFC8107975504098F1B7BE1 /* libPods-onefimoviesTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-onefimoviesTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FF35B54623C4529CC677064 /* Pods-onefimoviesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-onefimoviesUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-onefimoviesUITests/Pods-onefimoviesUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8708002734DD9D2903ECA2CC /* Pods-onefimovies.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-onefimovies.debug.xcconfig"; path = "Pods/Target Support Files/Pods-onefimovies/Pods-onefimovies.debug.xcconfig"; sourceTree = "<group>"; };
+		A7AFD3BD47E4FC6C4B2343C3 /* Pods-onefimoviesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-onefimoviesTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-onefimoviesTests/Pods-onefimoviesTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CF1338787F824816EC17C8FD /* Pods-onefimovies.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-onefimovies.release.xcconfig"; path = "Pods/Target Support Files/Pods-onefimovies/Pods-onefimovies.release.xcconfig"; sourceTree = "<group>"; };
+		D5C284531B313B3F61D00150 /* Pods_onefimovies.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_onefimovies.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6647A66222F408000F8C52A /* onefimovies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = onefimovies.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6647A69222F408000F8C52A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E6647A6E222F408000F8C52A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E6647A70222F408200F8C52A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E6647A73222F408200F8C52A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E6647A75222F408200F8C52A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6647A7A222F408300F8C52A /* onefimoviesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = onefimoviesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6647A7E222F408300F8C52A /* onefimoviesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = onefimoviesTests.swift; sourceTree = "<group>"; };
+		E6647A80222F408300F8C52A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6647A85222F408300F8C52A /* onefimoviesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = onefimoviesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6647A89222F408300F8C52A /* onefimoviesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = onefimoviesUITests.swift; sourceTree = "<group>"; };
+		E6647A8B222F408300F8C52A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6EE69B1222F4E04003B56F3 /* ColourSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColourSetting.swift; sourceTree = "<group>"; };
+		E6EE69B7222F512F003B56F3 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		E6EE69B9222F5566003B56F3 /* IntroController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroController.swift; sourceTree = "<group>"; };
+		E6EE69BB222F5710003B56F3 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		E6EE69BF222F5D99003B56F3 /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
+		E6EE69CF222F71E0003B56F3 /* databasehelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = databasehelper.swift; sourceTree = "<group>"; };
+		E6EE69D2222F75EC003B56F3 /* CentralController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CentralController.swift; sourceTree = "<group>"; };
+		E6EE69D7222F76EF003B56F3 /* ListingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingController.swift; sourceTree = "<group>"; };
+		E6EE69DA222F789E003B56F3 /* MovieTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableCell.swift; sourceTree = "<group>"; };
+		E6EE69DB222F789E003B56F3 /* MovieTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieTableCell.xib; sourceTree = "<group>"; };
+		E6EE6A1C222F9591003B56F3 /* DetailsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsController.swift; sourceTree = "<group>"; };
+		E6EE6A3E222F9B95003B56F3 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		E6EE6A3F222F9B95003B56F3 /* OpenSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Italic.ttf"; sourceTree = "<group>"; };
+		E6EE6A40222F9B95003B56F3 /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
+		E6EE6A41222F9B95003B56F3 /* OpenSans-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Semibold.ttf"; sourceTree = "<group>"; };
+		E6EE6A42222F9B95003B56F3 /* TitilliumWeb-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TitilliumWeb-Italic.ttf"; sourceTree = "<group>"; };
+		E6EE6A43222F9B96003B56F3 /* TitilliumWeb-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TitilliumWeb-Light.ttf"; sourceTree = "<group>"; };
+		E6EE6A44222F9B96003B56F3 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
+		E6EE6A45222F9B96003B56F3 /* TitilliumWeb-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TitilliumWeb-LightItalic.ttf"; sourceTree = "<group>"; };
+		E6EE6A46222F9B96003B56F3 /* TitilliumWeb-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TitilliumWeb-ExtraLight.ttf"; sourceTree = "<group>"; };
+		E6EE6A47222F9B96003B56F3 /* TitilliumWeb-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TitilliumWeb-SemiBold.ttf"; sourceTree = "<group>"; };
+		E6EE6A48222F9B97003B56F3 /* TitilliumWeb-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TitilliumWeb-Regular.ttf"; sourceTree = "<group>"; };
+		E6EE6A49222F9B97003B56F3 /* TitilliumWeb-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TitilliumWeb-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		E6EE6A4A222F9B97003B56F3 /* TitilliumWeb-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TitilliumWeb-BoldItalic.ttf"; sourceTree = "<group>"; };
+		E6EE6A4B222F9B97003B56F3 /* OpenSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-BoldItalic.ttf"; sourceTree = "<group>"; };
+		E6EE6A4C222F9B98003B56F3 /* TitilliumWeb-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TitilliumWeb-Bold.ttf"; sourceTree = "<group>"; };
+		E6EE6A4D222F9B98003B56F3 /* TitilliumWeb-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TitilliumWeb-Black.ttf"; sourceTree = "<group>"; };
+		E6EE6A4E222F9B98003B56F3 /* TitilliumWeb-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TitilliumWeb-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		E6EE6A60222FF52D003B56F3 /* filled_star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = filled_star.png; sourceTree = "<group>"; };
+		E6EE6A61222FF52D003B56F3 /* empty_star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = empty_star.png; sourceTree = "<group>"; };
+		E6EE6A672230006F003B56F3 /* RatingTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingTableCell.swift; sourceTree = "<group>"; };
+		E6EE6A682230006F003B56F3 /* RatingTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RatingTableCell.xib; sourceTree = "<group>"; };
+		E6EE6A6C22300149003B56F3 /* RatingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingController.swift; sourceTree = "<group>"; };
+		E6EE6A7122304C5F003B56F3 /* movieseeddata.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = movieseeddata.txt; sourceTree = "<group>"; };
+		E6EE6A7322304C98003B56F3 /* SeedHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeedHelper.swift; sourceTree = "<group>"; };
+		E6EE6A7522304D16003B56F3 /* ListingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingModel.swift; sourceTree = "<group>"; };
+		E6EE6A782230546A003B56F3 /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
+		E6EE6A7A22305B18003B56F3 /* ListingWebController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingWebController.swift; sourceTree = "<group>"; };
+		E6EE6A7C22305B83003B56F3 /* WebApiConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebApiConstant.swift; sourceTree = "<group>"; };
+		E6EE6A8022307934003B56F3 /* ListingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingViewModel.swift; sourceTree = "<group>"; };
+		E6EE6A8222307E03003B56F3 /* errorposter.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = errorposter.jpg; sourceTree = "<group>"; };
+		E6EE6A8622309797003B56F3 /* RatingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingViewModel.swift; sourceTree = "<group>"; };
+		E6EE6A8922309C14003B56F3 /* SearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
+		E6EE6A8D2230AE6F003B56F3 /* SearchTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableCell.swift; sourceTree = "<group>"; };
+		E6EE6A8E2230AE6F003B56F3 /* SearchTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchTableCell.xib; sourceTree = "<group>"; };
+		E6EE6A912230AF6C003B56F3 /* search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = search.png; sourceTree = "<group>"; };
+		E6EE6A932230B146003B56F3 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		E6EE6A962230B4A8003B56F3 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		E6FE5D002230DF9500CAF350 /* sampleresponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = sampleresponse.json; path = ../../../../sampleresponse.json; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E6647A63222F408000F8C52A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C41D4DBBDC43CD4B0ED5430A /* Pods_onefimovies.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6647A77222F408300F8C52A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25FEC9EE6F4DA17FB2FFBEFA /* libPods-onefimoviesTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6647A82222F408300F8C52A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5873DE3DC339C7044622E81E /* libPods-onefimoviesUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1C635983A33ACAD3E8F7D1D9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D5C284531B313B3F61D00150 /* Pods_onefimovies.framework */,
+				6CFC8107975504098F1B7BE1 /* libPods-onefimoviesTests.a */,
+				328F644547FAD1F4E464F343 /* libPods-onefimoviesUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1E6C5FDE13B2FD5B62EB3625 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8708002734DD9D2903ECA2CC /* Pods-onefimovies.debug.xcconfig */,
+				CF1338787F824816EC17C8FD /* Pods-onefimovies.release.xcconfig */,
+				A7AFD3BD47E4FC6C4B2343C3 /* Pods-onefimoviesTests.debug.xcconfig */,
+				5AD48863871E57EAFE050B1E /* Pods-onefimoviesTests.release.xcconfig */,
+				56687004980E2A8797C34CC4 /* Pods-onefimoviesUITests.debug.xcconfig */,
+				7FF35B54623C4529CC677064 /* Pods-onefimoviesUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E6647A5D222F408000F8C52A = {
+			isa = PBXGroup;
+			children = (
+				E6647A68222F408000F8C52A /* onefimovies */,
+				E6647A7D222F408300F8C52A /* onefimoviesTests */,
+				E6647A88222F408300F8C52A /* onefimoviesUITests */,
+				E6647A67222F408000F8C52A /* Products */,
+				1E6C5FDE13B2FD5B62EB3625 /* Pods */,
+				1C635983A33ACAD3E8F7D1D9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E6647A67222F408000F8C52A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E6647A66222F408000F8C52A /* onefimovies.app */,
+				E6647A7A222F408300F8C52A /* onefimoviesTests.xctest */,
+				E6647A85222F408300F8C52A /* onefimoviesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E6647A68222F408000F8C52A /* onefimovies */ = {
+			isa = PBXGroup;
+			children = (
+				E6EE6A7722305456003B56F3 /* datastructure */,
+				E6EE6A6E2230496D003B56F3 /* seed */,
+				E6EE69CE222F71CD003B56F3 /* database */,
+				E6EE69C1222F5E1D003B56F3 /* font */,
+				E6EE69B0222F4CE5003B56F3 /* appsettings */,
+				E6647A9C222F40E300F8C52A /* views */,
+				E6647A9B222F40CF00F8C52A /* image */,
+				E6647A9A222F40C700F8C52A /* assests */,
+				E6647A97222F409700F8C52A /* storyboard */,
+				E6647A69222F408000F8C52A /* AppDelegate.swift */,
+				E6647A70222F408200F8C52A /* Assets.xcassets */,
+				E6647A75222F408200F8C52A /* Info.plist */,
+			);
+			path = onefimovies;
+			sourceTree = "<group>";
+		};
+		E6647A7D222F408300F8C52A /* onefimoviesTests */ = {
+			isa = PBXGroup;
+			children = (
+				E6647A7E222F408300F8C52A /* onefimoviesTests.swift */,
+				E6647A80222F408300F8C52A /* Info.plist */,
+			);
+			path = onefimoviesTests;
+			sourceTree = "<group>";
+		};
+		E6647A88222F408300F8C52A /* onefimoviesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E6647A89222F408300F8C52A /* onefimoviesUITests.swift */,
+				E6647A8B222F408300F8C52A /* Info.plist */,
+			);
+			path = onefimoviesUITests;
+			sourceTree = "<group>";
+		};
+		E6647A97222F409700F8C52A /* storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				E6647A72222F408200F8C52A /* LaunchScreen.storyboard */,
+				E6647A6D222F408000F8C52A /* Main.storyboard */,
+			);
+			path = storyboard;
+			sourceTree = "<group>";
+		};
+		E6647A9A222F40C700F8C52A /* assests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = assests;
+			sourceTree = "<group>";
+		};
+		E6647A9B222F40CF00F8C52A /* image */ = {
+			isa = PBXGroup;
+			children = (
+				E6EE6A912230AF6C003B56F3 /* search.png */,
+				E6EE6A61222FF52D003B56F3 /* empty_star.png */,
+				E6EE6A8222307E03003B56F3 /* errorposter.jpg */,
+				E6EE6A60222FF52D003B56F3 /* filled_star.png */,
+				E6EE69BF222F5D99003B56F3 /* background.jpg */,
+				E6EE69B7222F512F003B56F3 /* logo.png */,
+			);
+			path = image;
+			sourceTree = "<group>";
+		};
+		E6647A9C222F40E300F8C52A /* views */ = {
+			isa = PBXGroup;
+			children = (
+				E6EE6A8822309B72003B56F3 /* search */,
+				E6EE6A6B22300130003B56F3 /* rating */,
+				E6EE69D4222F768C003B56F3 /* listing */,
+				E6EE69D1222F75C9003B56F3 /* common */,
+				E6647A9F222F410100F8C52A /* details */,
+				E6647A9D222F40EB00F8C52A /* intro */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		E6647A9D222F40EB00F8C52A /* intro */ = {
+			isa = PBXGroup;
+			children = (
+				E6EE69B9222F5566003B56F3 /* IntroController.swift */,
+			);
+			path = intro;
+			sourceTree = "<group>";
+		};
+		E6647A9F222F410100F8C52A /* details */ = {
+			isa = PBXGroup;
+			children = (
+				E6EE6A1C222F9591003B56F3 /* DetailsController.swift */,
+			);
+			path = details;
+			sourceTree = "<group>";
+		};
+		E6EE69B0222F4CE5003B56F3 /* appsettings */ = {
+			isa = PBXGroup;
+			children = (
+				E6EE69B1222F4E04003B56F3 /* ColourSetting.swift */,
+				E6EE69BB222F5710003B56F3 /* Extension.swift */,
+				E6EE6A7C22305B83003B56F3 /* WebApiConstant.swift */,
+				E6EE6A932230B146003B56F3 /* DataManager.swift */,
+			);
+			path = appsettings;
+			sourceTree = "<group>";
+		};
+		E6EE69C1222F5E1D003B56F3 /* font */ = {
+			isa = PBXGroup;
+			children = (
+				E6EE6A44222F9B96003B56F3 /* OpenSans-Bold.ttf */,
+				E6EE6A4B222F9B97003B56F3 /* OpenSans-BoldItalic.ttf */,
+				E6EE6A3F222F9B95003B56F3 /* OpenSans-Italic.ttf */,
+				E6EE6A40222F9B95003B56F3 /* OpenSans-Light.ttf */,
+				E6EE6A3E222F9B95003B56F3 /* OpenSans-Regular.ttf */,
+				E6EE6A41222F9B95003B56F3 /* OpenSans-Semibold.ttf */,
+				E6EE6A4D222F9B98003B56F3 /* TitilliumWeb-Black.ttf */,
+				E6EE6A4C222F9B98003B56F3 /* TitilliumWeb-Bold.ttf */,
+				E6EE6A4A222F9B97003B56F3 /* TitilliumWeb-BoldItalic.ttf */,
+				E6EE6A46222F9B96003B56F3 /* TitilliumWeb-ExtraLight.ttf */,
+				E6EE6A49222F9B97003B56F3 /* TitilliumWeb-ExtraLightItalic.ttf */,
+				E6EE6A42222F9B95003B56F3 /* TitilliumWeb-Italic.ttf */,
+				E6EE6A43222F9B96003B56F3 /* TitilliumWeb-Light.ttf */,
+				E6EE6A45222F9B96003B56F3 /* TitilliumWeb-LightItalic.ttf */,
+				E6EE6A48222F9B97003B56F3 /* TitilliumWeb-Regular.ttf */,
+				E6EE6A47222F9B96003B56F3 /* TitilliumWeb-SemiBold.ttf */,
+				E6EE6A4E222F9B98003B56F3 /* TitilliumWeb-SemiBoldItalic.ttf */,
+			);
+			path = font;
+			sourceTree = "<group>";
+		};
+		E6EE69CE222F71CD003B56F3 /* database */ = {
+			isa = PBXGroup;
+			children = (
+				E6EE69CF222F71E0003B56F3 /* databasehelper.swift */,
+			);
+			path = database;
+			sourceTree = "<group>";
+		};
+		E6EE69D1222F75C9003B56F3 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				E6EE69D2222F75EC003B56F3 /* CentralController.swift */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		E6EE69D4222F768C003B56F3 /* listing */ = {
+			isa = PBXGroup;
+			children = (
+				E6EE69D9222F7871003B56F3 /* Movietablecell */,
+				E6EE69D7222F76EF003B56F3 /* ListingController.swift */,
+				E6EE6A7522304D16003B56F3 /* ListingModel.swift */,
+				E6EE6A7A22305B18003B56F3 /* ListingWebController.swift */,
+				E6EE6A8022307934003B56F3 /* ListingViewModel.swift */,
+			);
+			path = listing;
+			sourceTree = "<group>";
+		};
+		E6EE69D9222F7871003B56F3 /* Movietablecell */ = {
+			isa = PBXGroup;
+			children = (
+				E6EE69DA222F789E003B56F3 /* MovieTableCell.swift */,
+				E6EE69DB222F789E003B56F3 /* MovieTableCell.xib */,
+			);
+			path = Movietablecell;
+			sourceTree = "<group>";
+		};
+		E6EE6A6422300026003B56F3 /* Ratingtablecell */ = {
+			isa = PBXGroup;
+			children = (
+				E6EE6A672230006F003B56F3 /* RatingTableCell.swift */,
+				E6EE6A682230006F003B56F3 /* RatingTableCell.xib */,
+			);
+			path = Ratingtablecell;
+			sourceTree = "<group>";
+		};
+		E6EE6A6B22300130003B56F3 /* rating */ = {
+			isa = PBXGroup;
+			children = (
+				E6EE6A6422300026003B56F3 /* Ratingtablecell */,
+				E6EE6A6C22300149003B56F3 /* RatingController.swift */,
+				E6EE6A8622309797003B56F3 /* RatingViewModel.swift */,
+			);
+			path = rating;
+			sourceTree = "<group>";
+		};
+		E6EE6A6E2230496D003B56F3 /* seed */ = {
+			isa = PBXGroup;
+			children = (
+				E6FE5CFB2230DDD200CAF350 /* test */,
+				E6EE6A7122304C5F003B56F3 /* movieseeddata.txt */,
+				E6EE6A7322304C98003B56F3 /* SeedHelper.swift */,
+			);
+			path = seed;
+			sourceTree = "<group>";
+		};
+		E6EE6A7722305456003B56F3 /* datastructure */ = {
+			isa = PBXGroup;
+			children = (
+				E6EE6A782230546A003B56F3 /* Queue.swift */,
+			);
+			path = datastructure;
+			sourceTree = "<group>";
+		};
+		E6EE6A8822309B72003B56F3 /* search */ = {
+			isa = PBXGroup;
+			children = (
+				E6EE6A8B2230AE3C003B56F3 /* searchtablecell */,
+				E6EE6A8922309C14003B56F3 /* SearchController.swift */,
+			);
+			path = search;
+			sourceTree = "<group>";
+		};
+		E6EE6A8B2230AE3C003B56F3 /* searchtablecell */ = {
+			isa = PBXGroup;
+			children = (
+				E6EE6A8D2230AE6F003B56F3 /* SearchTableCell.swift */,
+				E6EE6A8E2230AE6F003B56F3 /* SearchTableCell.xib */,
+				E6EE6A962230B4A8003B56F3 /* SearchViewModel.swift */,
+			);
+			path = searchtablecell;
+			sourceTree = "<group>";
+		};
+		E6FE5CFB2230DDD200CAF350 /* test */ = {
+			isa = PBXGroup;
+			children = (
+				E6FE5D002230DF9500CAF350 /* sampleresponse.json */,
+			);
+			path = test;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E6647A65222F408000F8C52A /* onefimovies */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E6647A8E222F408300F8C52A /* Build configuration list for PBXNativeTarget "onefimovies" */;
+			buildPhases = (
+				9C093AB98B335D2F40992815 /* [CP] Check Pods Manifest.lock */,
+				E6647A62222F408000F8C52A /* Sources */,
+				E6647A63222F408000F8C52A /* Frameworks */,
+				E6647A64222F408000F8C52A /* Resources */,
+				3638CD919B9F5BAEA76BA205 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = onefimovies;
+			productName = onefimovies;
+			productReference = E6647A66222F408000F8C52A /* onefimovies.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E6647A79222F408300F8C52A /* onefimoviesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E6647A91222F408300F8C52A /* Build configuration list for PBXNativeTarget "onefimoviesTests" */;
+			buildPhases = (
+				4026B92E27FC3379B6E49D47 /* [CP] Check Pods Manifest.lock */,
+				E6647A76222F408300F8C52A /* Sources */,
+				E6647A77222F408300F8C52A /* Frameworks */,
+				E6647A78222F408300F8C52A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E6647A7C222F408300F8C52A /* PBXTargetDependency */,
+			);
+			name = onefimoviesTests;
+			productName = onefimoviesTests;
+			productReference = E6647A7A222F408300F8C52A /* onefimoviesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E6647A84222F408300F8C52A /* onefimoviesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E6647A94222F408300F8C52A /* Build configuration list for PBXNativeTarget "onefimoviesUITests" */;
+			buildPhases = (
+				2AEC3E7E03DF0891DDE0D590 /* [CP] Check Pods Manifest.lock */,
+				E6647A81222F408300F8C52A /* Sources */,
+				E6647A82222F408300F8C52A /* Frameworks */,
+				E6647A83222F408300F8C52A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E6647A87222F408300F8C52A /* PBXTargetDependency */,
+			);
+			name = onefimoviesUITests;
+			productName = onefimoviesUITests;
+			productReference = E6647A85222F408300F8C52A /* onefimoviesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E6647A5E222F408000F8C52A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = onefi;
+				TargetAttributes = {
+					E6647A65222F408000F8C52A = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					E6647A79222F408300F8C52A = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = E6647A65222F408000F8C52A;
+					};
+					E6647A84222F408300F8C52A = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = E6647A65222F408000F8C52A;
+					};
+				};
+			};
+			buildConfigurationList = E6647A61222F408000F8C52A /* Build configuration list for PBXProject "onefimovies" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E6647A5D222F408000F8C52A;
+			productRefGroup = E6647A67222F408000F8C52A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E6647A65222F408000F8C52A /* onefimovies */,
+				E6647A79222F408300F8C52A /* onefimoviesTests */,
+				E6647A84222F408300F8C52A /* onefimoviesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E6647A64222F408000F8C52A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6EE6A5F222F9B99003B56F3 /* TitilliumWeb-SemiBoldItalic.ttf in Resources */,
+				E6EE6A59222F9B99003B56F3 /* TitilliumWeb-Regular.ttf in Resources */,
+				E6EE6A50222F9B99003B56F3 /* OpenSans-Italic.ttf in Resources */,
+				E6EE6A63222FF52E003B56F3 /* empty_star.png in Resources */,
+				E6EE6A5B222F9B99003B56F3 /* TitilliumWeb-BoldItalic.ttf in Resources */,
+				E6EE6A5C222F9B99003B56F3 /* OpenSans-BoldItalic.ttf in Resources */,
+				E6EE6A6A2230006F003B56F3 /* RatingTableCell.xib in Resources */,
+				E6EE6A52222F9B99003B56F3 /* OpenSans-Semibold.ttf in Resources */,
+				E6EE69B8222F512F003B56F3 /* logo.png in Resources */,
+				E6EE6A5E222F9B99003B56F3 /* TitilliumWeb-Black.ttf in Resources */,
+				E6EE6A5D222F9B99003B56F3 /* TitilliumWeb-Bold.ttf in Resources */,
+				E6EE69C0222F5D99003B56F3 /* background.jpg in Resources */,
+				E6EE6A56222F9B99003B56F3 /* TitilliumWeb-LightItalic.ttf in Resources */,
+				E6FE5D012230DF9500CAF350 /* sampleresponse.json in Resources */,
+				E6EE6A902230AE6F003B56F3 /* SearchTableCell.xib in Resources */,
+				E6EE6A8322307E04003B56F3 /* errorposter.jpg in Resources */,
+				E6647A74222F408200F8C52A /* LaunchScreen.storyboard in Resources */,
+				E6EE69DD222F789E003B56F3 /* MovieTableCell.xib in Resources */,
+				E6EE6A62222FF52E003B56F3 /* filled_star.png in Resources */,
+				E6647A71222F408200F8C52A /* Assets.xcassets in Resources */,
+				E6EE6A55222F9B99003B56F3 /* OpenSans-Bold.ttf in Resources */,
+				E6EE6A5A222F9B99003B56F3 /* TitilliumWeb-ExtraLightItalic.ttf in Resources */,
+				E6EE6A4F222F9B99003B56F3 /* OpenSans-Regular.ttf in Resources */,
+				E6EE6A57222F9B99003B56F3 /* TitilliumWeb-ExtraLight.ttf in Resources */,
+				E6EE6A54222F9B99003B56F3 /* TitilliumWeb-Light.ttf in Resources */,
+				E6EE6A53222F9B99003B56F3 /* TitilliumWeb-Italic.ttf in Resources */,
+				E6EE6A922230AF6D003B56F3 /* search.png in Resources */,
+				E6EE6A58222F9B99003B56F3 /* TitilliumWeb-SemiBold.ttf in Resources */,
+				E6EE6A51222F9B99003B56F3 /* OpenSans-Light.ttf in Resources */,
+				E6EE6A7222304C60003B56F3 /* movieseeddata.txt in Resources */,
+				E6647A6F222F408000F8C52A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6647A78222F408300F8C52A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6FE5D022230DF9500CAF350 /* sampleresponse.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6647A83222F408300F8C52A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6FE5D032230DF9500CAF350 /* sampleresponse.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2AEC3E7E03DF0891DDE0D590 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-onefimoviesUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3638CD919B9F5BAEA76BA205 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-onefimovies/Pods-onefimovies-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher-framework/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/SkeletonView-framework/SkeletonView.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON-framework/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SkeletonView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-onefimovies/Pods-onefimovies-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4026B92E27FC3379B6E49D47 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-onefimoviesTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C093AB98B335D2F40992815 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-onefimovies-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E6647A62222F408000F8C52A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6EE69D8222F76EF003B56F3 /* ListingController.swift in Sources */,
+				E6EE6A7B22305B18003B56F3 /* ListingWebController.swift in Sources */,
+				E6EE69D0222F71E0003B56F3 /* databasehelper.swift in Sources */,
+				E6EE6A6D22300149003B56F3 /* RatingController.swift in Sources */,
+				E6EE6A1D222F9591003B56F3 /* DetailsController.swift in Sources */,
+				E6EE6A8122307934003B56F3 /* ListingViewModel.swift in Sources */,
+				E6EE6A7622304D16003B56F3 /* ListingModel.swift in Sources */,
+				E6EE6A7422304C98003B56F3 /* SeedHelper.swift in Sources */,
+				E6EE69BC222F5710003B56F3 /* Extension.swift in Sources */,
+				E6EE6A692230006F003B56F3 /* RatingTableCell.swift in Sources */,
+				E6EE69BA222F5566003B56F3 /* IntroController.swift in Sources */,
+				E6EE6A8A22309C14003B56F3 /* SearchController.swift in Sources */,
+				E6EE6A792230546A003B56F3 /* Queue.swift in Sources */,
+				E6EE6A972230B4A8003B56F3 /* SearchViewModel.swift in Sources */,
+				E6EE69DC222F789E003B56F3 /* MovieTableCell.swift in Sources */,
+				E6EE6A8F2230AE6F003B56F3 /* SearchTableCell.swift in Sources */,
+				E6EE69B2222F4E04003B56F3 /* ColourSetting.swift in Sources */,
+				E6647A6A222F408000F8C52A /* AppDelegate.swift in Sources */,
+				E6EE6A7D22305B83003B56F3 /* WebApiConstant.swift in Sources */,
+				E6EE6A942230B146003B56F3 /* DataManager.swift in Sources */,
+				E6EE69D3222F75EC003B56F3 /* CentralController.swift in Sources */,
+				E6EE6A8722309797003B56F3 /* RatingViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6647A76222F408300F8C52A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6EE6A9E2230D565003B56F3 /* databasehelper.swift in Sources */,
+				E6FE5D052230E26E00CAF350 /* WebApiConstant.swift in Sources */,
+				E6EE6A9C2230CB31003B56F3 /* Extension.swift in Sources */,
+				E6EE6A9B2230CAAD003B56F3 /* ListingModel.swift in Sources */,
+				E6EE6A982230C648003B56F3 /* SeedHelper.swift in Sources */,
+				E6EE6A9A2230CA64003B56F3 /* Queue.swift in Sources */,
+				E6647A7F222F408300F8C52A /* onefimoviesTests.swift in Sources */,
+				E6FE5D042230E0A600CAF350 /* ListingWebController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6647A81222F408300F8C52A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6EE6A9D2230D562003B56F3 /* databasehelper.swift in Sources */,
+				E6647A8A222F408300F8C52A /* onefimoviesUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E6647A7C222F408300F8C52A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E6647A65222F408000F8C52A /* onefimovies */;
+			targetProxy = E6647A7B222F408300F8C52A /* PBXContainerItemProxy */;
+		};
+		E6647A87222F408300F8C52A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E6647A65222F408000F8C52A /* onefimovies */;
+			targetProxy = E6647A86222F408300F8C52A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E6647A6D222F408000F8C52A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E6647A6E222F408000F8C52A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E6647A72222F408200F8C52A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E6647A73222F408200F8C52A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E6647A8C222F408300F8C52A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E6647A8D222F408300F8C52A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E6647A8F222F408300F8C52A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8708002734DD9D2903ECA2CC /* Pods-onefimovies.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LP9NM4VEWL;
+				INFOPLIST_FILE = onefimovies/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = onefi.onefimovies;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E6647A90222F408300F8C52A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF1338787F824816EC17C8FD /* Pods-onefimovies.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LP9NM4VEWL;
+				INFOPLIST_FILE = onefimovies/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = onefi.onefimovies;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E6647A92222F408300F8C52A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7AFD3BD47E4FC6C4B2343C3 /* Pods-onefimoviesTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LP9NM4VEWL;
+				INFOPLIST_FILE = onefimoviesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = onefi.onefimoviesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/onefimovies.app/onefimovies";
+			};
+			name = Debug;
+		};
+		E6647A93222F408300F8C52A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5AD48863871E57EAFE050B1E /* Pods-onefimoviesTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LP9NM4VEWL;
+				INFOPLIST_FILE = onefimoviesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = onefi.onefimoviesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/onefimovies.app/onefimovies";
+			};
+			name = Release;
+		};
+		E6647A95222F408300F8C52A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56687004980E2A8797C34CC4 /* Pods-onefimoviesUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LP9NM4VEWL;
+				INFOPLIST_FILE = onefimoviesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = onefi.onefimoviesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = onefimovies;
+			};
+			name = Debug;
+		};
+		E6647A96222F408300F8C52A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FF35B54623C4529CC677064 /* Pods-onefimoviesUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LP9NM4VEWL;
+				INFOPLIST_FILE = onefimoviesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = onefi.onefimoviesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = onefimovies;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E6647A61222F408000F8C52A /* Build configuration list for PBXProject "onefimovies" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6647A8C222F408300F8C52A /* Debug */,
+				E6647A8D222F408300F8C52A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E6647A8E222F408300F8C52A /* Build configuration list for PBXNativeTarget "onefimovies" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6647A8F222F408300F8C52A /* Debug */,
+				E6647A90222F408300F8C52A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E6647A91222F408300F8C52A /* Build configuration list for PBXNativeTarget "onefimoviesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6647A92222F408300F8C52A /* Debug */,
+				E6647A93222F408300F8C52A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E6647A94222F408300F8C52A /* Build configuration list for PBXNativeTarget "onefimoviesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6647A95222F408300F8C52A /* Debug */,
+				E6647A96222F408300F8C52A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E6647A5E222F408000F8C52A /* Project object */;
+}

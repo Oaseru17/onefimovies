@@ -1,0 +1,36 @@
+platform :ios, '9.0'
+
+target 'onefimovies' do
+pod 'SwiftyJSON'
+pod 'Kingfisher', '~> 4.0'
+pod 'SkeletonView'
+
+
+
+use_frameworks!
+end
+
+  target 'onefimoviesTests' do
+    inherit! :search_paths
+pod 'Mockingjay'
+pod 'SwiftyJSON'
+pod 'Kingfisher', '~> 4.0'
+pod 'SkeletonView'
+  end
+
+  target 'onefimoviesUITests' do
+    inherit! :search_paths
+    pod 'SwiftyJSON'
+    pod 'Kingfisher', '~> 4.0'
+    pod 'SkeletonView'
+
+  end
+
+
+post_install do |installer|
+    installer.pods_project.build_configurations.each do |config|
+        config.build_settings.delete('CODE_SIGNING_ALLOWED')
+        config.build_settings.delete('CODE_SIGNING_REQUIRED')
+end
+
+end

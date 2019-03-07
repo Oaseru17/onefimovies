@@ -1,0 +1,13 @@
+ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES
+FRAMEWORK_SEARCH_PATHS = $(inherited) "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/Kingfisher" "${PODS_ROOT}/Headers/Public/Mockingjay"
+LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Kingfisher-library" "${PODS_CONFIGURATION_BUILD_DIR}/Mockingjay" "${PODS_CONFIGURATION_BUILD_DIR}/SkeletonView-library" "${PODS_CONFIGURATION_BUILD_DIR}/SwiftyJSON-library" "${PODS_CONFIGURATION_BUILD_DIR}/URITemplate"
+OTHER_CFLAGS = $(inherited) -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/Kingfisher-library/Kingfisher.modulemap" -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/SkeletonView-library/SkeletonView.modulemap" -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/SwiftyJSON-library/SwiftyJSON.modulemap" -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/Mockingjay/Mockingjay.modulemap" -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/URITemplate/URITemplate.modulemap" -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/Kingfisher" -isystem "${PODS_ROOT}/Headers/Public/Mockingjay"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"Kingfisher-library" -l"Mockingjay" -l"SkeletonView-library" -l"SwiftyJSON-library" -l"URITemplate" -framework "CFNetwork" -framework "XCTest"
+OTHER_SWIFT_FLAGS = $(inherited) -Xcc -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/Kingfisher-library/Kingfisher.modulemap" -Xcc -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/SkeletonView-library/SkeletonView.modulemap" -Xcc -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/SwiftyJSON-library/SwiftyJSON.modulemap" -Xcc -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/Mockingjay/Mockingjay.modulemap" -Xcc -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/URITemplate/URITemplate.modulemap" $(inherited) "-D" "COCOAPODS"
+PODS_BUILD_DIR = ${BUILD_DIR}
+PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
+PODS_ROOT = ${SRCROOT}/Pods
+SWIFT_INCLUDE_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Kingfisher-library" "${PODS_CONFIGURATION_BUILD_DIR}/Mockingjay" "${PODS_CONFIGURATION_BUILD_DIR}/SkeletonView-library" "${PODS_CONFIGURATION_BUILD_DIR}/SwiftyJSON-library" "${PODS_CONFIGURATION_BUILD_DIR}/URITemplate"

@@ -1,0 +1,6 @@
+module Pods_onefimoviesUITests {
+  umbrella header "Pods-onefimoviesUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MovieTableCell" rowHeight="120" id="KGk-i7-Jjw" customClass="MovieTableCell" customModule="onefimovies" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="415" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="415" height="119.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6uc-lP-cbw">
+                        <rect key="frame" x="5" y="5" width="400" height="109.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="errorposter.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Sei-0i-F8c">
+                                <rect key="frame" x="0.0" y="0.0" width="90" height="109.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="jDo-2O-Qa7"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IB0-Z9-fq9">
+                                <rect key="frame" x="95" y="2" width="305" height="105.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="quI-UE-jwC">
+                                        <rect key="frame" x="0.0" y="0.0" width="305" height="19"/>
+                                        <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YYYY" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uVn-9E-eEF">
+                                        <rect key="frame" x="0.0" y="14" width="305" height="19.5"/>
+                                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="14"/>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Directed By" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dEv-nF-HcF">
+                                        <rect key="frame" x="0.0" y="28.5" width="64.5" height="16.5"/>
+                                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="12"/>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t07-Mc-Pux">
+                                        <rect key="frame" x="0.0" y="40" width="9.5" height="19.5"/>
+                                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="14"/>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="quI-UE-jwC" secondAttribute="trailing" id="4pg-Hg-H7C"/>
+                                    <constraint firstItem="quI-UE-jwC" firstAttribute="leading" secondItem="IB0-Z9-fq9" secondAttribute="leading" id="Gkg-DB-Ndz"/>
+                                    <constraint firstItem="uVn-9E-eEF" firstAttribute="top" secondItem="quI-UE-jwC" secondAttribute="bottom" constant="-5" id="Jaa-q5-YC7"/>
+                                    <constraint firstItem="dEv-nF-HcF" firstAttribute="top" secondItem="uVn-9E-eEF" secondAttribute="bottom" constant="-5" id="Ly6-r4-sZh"/>
+                                    <constraint firstAttribute="trailing" secondItem="uVn-9E-eEF" secondAttribute="trailing" id="NZW-xL-5Kd"/>
+                                    <constraint firstItem="dEv-nF-HcF" firstAttribute="leading" secondItem="IB0-Z9-fq9" secondAttribute="leading" id="OsS-Uw-DBh"/>
+                                    <constraint firstItem="t07-Mc-Pux" firstAttribute="leading" secondItem="IB0-Z9-fq9" secondAttribute="leading" id="g3s-iG-G3L"/>
+                                    <constraint firstItem="t07-Mc-Pux" firstAttribute="top" secondItem="dEv-nF-HcF" secondAttribute="bottom" constant="-5" id="jvZ-FP-3GU"/>
+                                    <constraint firstItem="uVn-9E-eEF" firstAttribute="leading" secondItem="IB0-Z9-fq9" secondAttribute="leading" id="lfj-XJ-2Yf"/>
+                                    <constraint firstItem="quI-UE-jwC" firstAttribute="top" secondItem="IB0-Z9-fq9" secondAttribute="top" id="tfX-kB-YhP"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Sei-0i-F8c" firstAttribute="top" secondItem="6uc-lP-cbw" secondAttribute="top" id="CgN-ux-hOc"/>
+                            <constraint firstAttribute="trailing" secondItem="IB0-Z9-fq9" secondAttribute="trailing" id="EHj-H2-7sI"/>
+                            <constraint firstItem="IB0-Z9-fq9" firstAttribute="leading" secondItem="Sei-0i-F8c" secondAttribute="trailing" constant="5" id="FMd-qa-3hC"/>
+                            <constraint firstItem="IB0-Z9-fq9" firstAttribute="top" secondItem="6uc-lP-cbw" secondAttribute="top" constant="2" id="MlM-rr-ZmS"/>
+                            <constraint firstAttribute="bottom" secondItem="IB0-Z9-fq9" secondAttribute="bottom" constant="2" id="Unn-5l-qve"/>
+                            <constraint firstItem="Sei-0i-F8c" firstAttribute="leading" secondItem="6uc-lP-cbw" secondAttribute="leading" id="Ynf-25-HDE"/>
+                            <constraint firstAttribute="bottom" secondItem="Sei-0i-F8c" secondAttribute="bottom" id="voI-dR-KhS"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="6uc-lP-cbw" secondAttribute="bottom" constant="5" id="f61-qb-lj4"/>
+                    <constraint firstItem="6uc-lP-cbw" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="idl-6p-wdI"/>
+                    <constraint firstItem="6uc-lP-cbw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="owZ-Pq-uib"/>
+                    <constraint firstAttribute="trailing" secondItem="6uc-lP-cbw" secondAttribute="trailing" constant="10" id="tVk-Ac-WwA"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="directedby" destination="dEv-nF-HcF" id="BSf-AG-Ytd"/>
+                <outlet property="director" destination="t07-Mc-Pux" id="U6W-8g-Azt"/>
+                <outlet property="posterImg" destination="Sei-0i-F8c" id="daE-Mg-ZCb"/>
+                <outlet property="title" destination="quI-UE-jwC" id="QG4-3g-Jt3"/>
+                <outlet property="year" destination="uVn-9E-eEF" id="huJ-0A-nkq"/>
+            </connections>
+            <point key="canvasLocation" x="32.799999999999997" y="52.173913043478265"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="errorposter.jpg" width="300" height="445"/>
+    </resources>
+</document>

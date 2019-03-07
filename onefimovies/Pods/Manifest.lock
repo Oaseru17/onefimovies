@@ -1,0 +1,37 @@
+PODS:
+  - Kingfisher (4.8.1)
+  - Mockingjay (2.0.1):
+    - Mockingjay/Core (= 2.0.1)
+    - Mockingjay/XCTest (= 2.0.1)
+  - Mockingjay/Core (2.0.1):
+    - URITemplate (~> 2.0)
+  - Mockingjay/XCTest (2.0.1):
+    - Mockingjay/Core
+  - SkeletonView (1.4)
+  - SwiftyJSON (4.1.0)
+  - URITemplate (2.0.3)
+
+DEPENDENCIES:
+  - Kingfisher (~> 4.0)
+  - Mockingjay
+  - SkeletonView
+  - SwiftyJSON
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Kingfisher
+    - Mockingjay
+    - SkeletonView
+    - SwiftyJSON
+    - URITemplate
+
+SPEC CHECKSUMS:
+  Kingfisher: 868c1149679a7ab6869be118faa9b5aed154aaf0
+  Mockingjay: 11a621880d2887f1775bdcf824341eb68f218450
+  SkeletonView: 50f7a9b04e3a62bd0ae964859c19317fabaea367
+  SwiftyJSON: c29297daf073d2aa016295d5809cdd68045c39b3
+  URITemplate: ace0c4c46dcf8afe6e89b4060621852886b15c3b
+
+PODFILE CHECKSUM: 17b9cf5dd0617b336d2e31d033df5683d118b807
+
+COCOAPODS: 1.5.3
