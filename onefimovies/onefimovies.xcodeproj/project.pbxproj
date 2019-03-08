@@ -70,7 +70,6 @@
 		E6EE6A9C2230CB31003B56F3 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EE69BB222F5710003B56F3 /* Extension.swift */; };
 		E6EE6A9D2230D562003B56F3 /* databasehelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EE69CF222F71E0003B56F3 /* databasehelper.swift */; };
 		E6EE6A9E2230D565003B56F3 /* databasehelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EE69CF222F71E0003B56F3 /* databasehelper.swift */; };
-		E6FE5D012230DF9500CAF350 /* sampleresponse.json in Resources */ = {isa = PBXBuildFile; fileRef = E6FE5D002230DF9500CAF350 /* sampleresponse.json */; };
 		E6FE5D022230DF9500CAF350 /* sampleresponse.json in Resources */ = {isa = PBXBuildFile; fileRef = E6FE5D002230DF9500CAF350 /* sampleresponse.json */; };
 		E6FE5D032230DF9500CAF350 /* sampleresponse.json in Resources */ = {isa = PBXBuildFile; fileRef = E6FE5D002230DF9500CAF350 /* sampleresponse.json */; };
 		E6FE5D042230E0A600CAF350 /* ListingWebController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EE6A7A22305B18003B56F3 /* ListingWebController.swift */; };
@@ -592,7 +591,6 @@
 				E6EE6A5D222F9B99003B56F3 /* TitilliumWeb-Bold.ttf in Resources */,
 				E6EE69C0222F5D99003B56F3 /* background.jpg in Resources */,
 				E6EE6A56222F9B99003B56F3 /* TitilliumWeb-LightItalic.ttf in Resources */,
-				E6FE5D012230DF9500CAF350 /* sampleresponse.json in Resources */,
 				E6EE6A902230AE6F003B56F3 /* SearchTableCell.xib in Resources */,
 				E6EE6A8322307E04003B56F3 /* errorposter.jpg in Resources */,
 				E6647A74222F408200F8C52A /* LaunchScreen.storyboard in Resources */,
